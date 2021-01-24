@@ -59,7 +59,7 @@
 
         #region Calculate standard deviation
         $StandardDeviation = [math]::Sqrt($Stats.Variance)
-        Add-Member -InputObject $Stats -MemberType NoteProperty -Name 'StandardDeviation' -Value $StandardDeviation
+        Add-Member -InputObject $Stats -MemberType NoteProperty -Name 'StandardDeviation' -Value $StandardDeviation -Force
         #endregion
 
         #region Calculate percentiles
